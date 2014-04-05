@@ -1,0 +1,26 @@
+{
+  "name": "mysterious-temple-1477",
+  "version": "0.0.0",
+  "homepage": "https://github.com/likesjx/mysterious-temple-1477",
+  "authors": [
+    "Jared Likes <likesjx@gmail.com>"
+  ],
+  "description": "This is an interesting cotigulon of a mess.",
+  "keywords": [
+    "jaredlikes",
+    "me",
+    "start"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gumby": "~2.6.3"
+  }
+}
