@@ -1,0 +1,33 @@
+{
+  "name": "mysterious-temple-1477",
+  "version": "0.0.0",
+  "description": "This is my personal site application",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "~0.4.4",
+    "gulp": "~3.6.0"
+  },
+  "devDependencies": {
+    "gulp": "~3.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/likesjx/mysterious-temple-1477.git"
+  },
+  "keywords": [
+    "personal",
+    "jared",
+    "likes",
+    "web",
+    "guru"
+  ],
+  "author": "Jared Likes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/likesjx/mysterious-temple-1477/issues"
+  },
+  "homepage": "https://github.com/likesjx/mysterious-temple-1477"
+}
