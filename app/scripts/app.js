@@ -25,6 +25,10 @@ angular.module('mysteriousTemple1477App', [
         controller: 'SettingsCtrl',
         authenticate: true
       })
+      .when('/end', {
+        templateUrl: 'partials/end',
+        controller: 'EndCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
