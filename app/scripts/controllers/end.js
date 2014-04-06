@@ -5,7 +5,7 @@ angular.module('mysteriousTemple1477App')
     $http.get('/api/awesomeThings').success(function(awesomeThings) {
       $scope.awesomeThings = awesomeThings;
     });
-    $scope.timeleft = "2:00";
+    $scope.timeleft = "";
 
     var seconds = 120;
 

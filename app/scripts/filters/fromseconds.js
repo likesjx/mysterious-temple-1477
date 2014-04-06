@@ -7,7 +7,7 @@ angular.module('mysteriousTemple1477App')
 
             var seconds = input%60;
             var minutes = (input-seconds)/60;
-            return ""+minutes+":"+seconds;
+            return ""+((minutes<10)?"0":"")+minutes+":"+((seconds<10)?"0":"")+seconds;
         } else return input;
     };
   });
