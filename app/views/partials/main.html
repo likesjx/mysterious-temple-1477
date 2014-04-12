@@ -1,4 +1,4 @@
-<div ng-include="'partials/navbar'"></div>
+
 
 <div class="jumbotron">
   <h1 ng-show="currentUser">Welcome, {{ currentUser.name }}!</h1>
@@ -14,8 +14,22 @@
       <h4>{{thing.name}}</h4>
       <p>{{thing.info}}</p>
   </div>
+<div ng-repeat="thing in awesomeThings">
+    <h4>{{thing.name}}</h4>
+    <p>{{thing.info}}</p>
+</div>
+<div ng-repeat="thing in awesomeThings">
+    <h4>{{thing.name}}</h4>
+    <p>{{thing.info}}</p>
+</div>
+<div ng-repeat="thing in awesomeThings">
+    <h4>{{thing.name}}</h4>
+    <p>{{thing.info}}</p>
+</div>
 </div>
 
+
+
 <div class="footer">
-  <p>Tell your deep dark secrets...</p>
+  <p>Be proud of who you are</p>
 </div>

@@ -24,6 +24,10 @@ body {
   padding-bottom: 19px;
 }
 
+.headspace {
+  height: 60px;
+}
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;
@@ -59,6 +63,128 @@ body {
   margin-top: 28px;
 }
 
+.glass {
+   width: 100px;
+   height: 100px;
+   margin: 10px;
+   padding: 0;
+   border: 1px solid rgba(0,0,0,0.5);
+   border-radius: 10px 10px 2px 2px;
+   background: rgba(0,0,0,0.25);
+   box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+   -o-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+   -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+   -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -15px 30px rgba(0,0,0,0.3);
+}
+
+a.button {
+	font-family: 'PT Sans', arial, serif;
+	color:#ffffff;
+	text-align:center;
+	font-size:24px;
+	font-weight:bold;
+	padding:10px;
+
+	text-shadow: /* Simulating Text Stroke */
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+
+	border: 1px solid rgba(0,0,0,0.5);
+	border-bottom: 3px solid rgba(0,0,0,0.5);
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+
+	background: rgba(0,0,0,0.25);
+
+    -o-box-shadow:
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -webkit-box-shadow:
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+    -moz-box-shadow:
+        0 2px 8px rgba(0,0,0,0.5),
+        inset 0 1px rgba(255,255,255,0.3),
+        inset 0 10px rgba(255,255,255,0.2),
+        inset 0 10px 20px rgba(255,255,255,0.25),
+        inset 0 -15px 30px rgba(0,0,0,0.3);
+
+	box-shadow:
+        0 2px 8px rgba(0,0,0,0.5), /* Exterior Shadow */
+        inset 0 1px rgba(255,255,255,0.3), /* Top light Line */
+        inset 0 10px rgba(255,255,255,0.2), /* Top Light Shadow */
+        inset 0 10px 20px rgba(255,255,255,0.25), /* Sides Light Shadow */
+        inset 0 -15px 30px rgba(0,0,0,0.3); /* Dark Background */
+
+	margin: 40px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+
+.bar:before {
+  background: black url(http://cdn.css-tricks.com/images/forums-bg.png) repeat 50% 100% fixed;
+}
+
+.bar {
+  float: left;
+  margin: 5px;
+  text-align: center;
+  color: #FFF;
+  text-shadow: 0px 1px 2px rgba(0,0,0,0.25);
+  line-height: 5em;
+  position: relative;
+  height: 5em;
+  width: 200px;
+  background: rgba(190,220,250,0.25);
+  border-top: 1px solid rgba(250,253,255,0.2);
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+  border-radius: 4px;
+}
+
+.bar:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  top: 0; right: 0; left: 0;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+}
+
+.bar:hover { box-shadow: 0px 0px 5px rgba(0,0,0,0.4); }
+
+.ionic-contrib-blur {
+  overflow: hidden;
+	position:absolute;
+  width: 100%;
+	top:0;
+	left:0;
+	right:0;
+	-webkit-filter:blur(20px);
+	opacity:.25;
+  z-index: 1;
+}
+
+.bar-frosted {
+  background-color: #F7F7F7;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   /* Remove the padding we set earlier */
@@ -76,4 +202,141 @@ body {
   .jumbotron {
     border-bottom: 0;
   }
+}
+
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "HelveticaNeue-Light", sans-serif;
+    background: #ddd;
+}
+header, .blur-header{
+    background: rgba(0,0,0,.6);
+    height: 40px;
+    position: fixed;
+    width: 100%;
+
+    top: 0;
+    border-bottom:1px solid rgba(0,0,5,.2);
+    z-index: 10000000000;
+}
+header{
+    text-align: center;
+    display: none;
+
+
+}
+header h1{
+    font-size: 24px;
+    font-family: "HelveticaNeue-Light", sans-serif;
+    font-weight: lighter;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+.blur-header{
+    background: transparent;
+    overflow: hidden;
+    z-index: 10000;
+    background: #000;
+    left: 0;
+
+}
+section{
+    height: 100%;
+    position: relative;
+    display: block;
+    max-width: 1024px;
+    margin: 0 auto;
+    background: #fff;
+}
+article{
+    background: #fff;
+    width: 100%;
+    padding: 22px;
+    margin-top: 70px;
+    z-index: 100;
+    font-size: 16px;
+    line-height: 150%;;
+}
+#canvas{
+    opacity:1;
+    z-index: 100;
+    position: absolute;
+    display: block;
+    top: 3px;
+}
+article .pic{
+    margin: -22px -22px 11px -22px
+}
+article div.gd{
+    /*background: -webkit-linear-gradient(bottom, rgba(0,0,0,.8) 0% , rgba(0,0,0,0)  100%) no-repeat;
+    height:auto;
+    display: block;
+    margin: -150px -11px 50px -11px;
+    padding: 0 11px 20px 11px;
+    position: relative;
+    color: #fff;*/
+
+}
+article h1{
+    font-size: 32px;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0 0 11px 0;
+    padding: 0;
+    line-height: 32px;
+}
+article h3{
+    line-height: 24px;
+    font-size: 24px;
+    margin:0;
+    padding: 0;
+    font-family: "HelveticaNeue-Light", sans-serif;
+    font-weight: normal;
+}
+article img{
+    width: 100%;
+}
+
+article p.first:first-letter{
+    display: block;
+    background: #111;
+    width: 44px;
+    height: 46px;
+    line-height: 46px;;
+    color: #fff;
+    position: relative;
+    padding: 5px;
+    float: left;
+    margin: 10px 10px 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+blockquote{
+    font-family: serif;
+    color: #999;
+    font-style: italic;
+    font-size: 20px;
+}
+footer{
+    margin: 22px -22px -22px -22px;
+    padding: 22px;
+    background: #111;
+    color: #ccc;
+}
+footer a{
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 1px dotted #fff;
 }
