@@ -10,7 +10,20 @@ angular.module('mysteriousTemple1477App', [
     $routeProvider
       .when('/', {
         templateUrl: 'partials/main',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        resolve : {
+            awesomeThings : ["$q","$http","$log", function($q, $http, $log) {
+                    $log.log("entering awesomeThings");
+                    var defer = $q.defer();
+
+                    $http.get('/api/awesomeThings').success(function(data) {
+                        defer.resolve(data);
+                    }).error(function(error) {
+                        defer.reject(error);
+                    });
+                    return defer.promise;
+                }]
+            }
       })
       .when('/login', {
         templateUrl: 'partials/login',
@@ -62,21 +75,6 @@ angular.module('mysteriousTemple1477App', [
 
     $rootScope.$on('$viewContentLoaded', function() {
         $rootScope.$broadcast("blurPage");
-    /*  $(function(){
-        html2canvas($("body"), {
-          onrendered: function(canvas) {
-            $(".blurheader").append(canvas);
-            $("canvas").attr("id","canvas");
-            stackBlurCanvasRGB('canvas', 0, 0, $("canvas").width(), $("canvas").height(), 70);
-          }
-
-
-        });
-        vv = setTimeout(function(){
-          $("header").show();
-          clearTimeout(vv);
-        },200)
-      });*/
-      return true;
+        return true;
     });
   });
